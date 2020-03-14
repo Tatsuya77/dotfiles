@@ -30,7 +30,7 @@ font pango:monospace 10
 floating_modifier $mod
 
 # Launch the special apps
-bindsym $mod+Control+1 exec chromium
+bindsym $mod+Control+1 exec chromium-browser
 bindsym $mod+Control+2 exec chromium chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html
 bindsym $mod+Control+3 exec slack
 bindsym $mod+Control+4 exec chromium
@@ -185,4 +185,3 @@ bindsym $mod+Shift+z	gaps inner current minus 5
 
 # terminal tranceparency
 # exec --no-startup-id compton;
-
