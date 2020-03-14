@@ -178,7 +178,7 @@ exec --no-startup-id feh --randomize --bg-scale ~/Pictures/wallpapers/*;
 # hide_edge_borders both
 for_window [class="^.*"] border pixel 2 
 gaps inner 10 
-gaps outer 15
+gaps outer 10
 
 bindsym $mod+z		gaps inner current plus 5
 bindsym $mod+Shift+z	gaps inner current minus 5
