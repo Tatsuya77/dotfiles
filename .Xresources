@@ -7,8 +7,8 @@ urxvt.scrollBar: false
 URxvt.background: #000000
 urxvt.foreground: gray
 !! Font prefferenes
-urxvt.font: xft:DejaVu Sans Mono:pixelsize=15
-urxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=13:weight=bold
+urxvt.font: xft:DejaVu Sans Mono:pixelsize=25
+urxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=25:weight=bold
 urxvt.letterSpace: -1
 !! Larger history limit
 urxvt.saveLines: 1000000
@@ -52,3 +52,6 @@ URxvt.colorBD: rgb:ff/ff/ff
 
 !! Fullscreen
 urxvt.keysym.F11: perl:fullscreen:switch
+
+!! HiDPI configuration (144 for Surface)
+Xft.dpi: 144
