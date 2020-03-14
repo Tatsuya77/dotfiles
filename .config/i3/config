@@ -33,7 +33,7 @@ floating_modifier $mod
 bindsym $mod+Control+1 exec chromium-browser
 bindsym $mod+Control+2 exec chromium chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html
 bindsym $mod+Control+3 exec slack
-bindsym $mod+Control+4 exec chromium
+bindsym $mod+Control+4 exec nautilus 
 bindsym $mod+Control+5 exec chromium
 bindsym $mod+Control+6 exec chromium
 bindsym $mod+Control+7 exec chromium
