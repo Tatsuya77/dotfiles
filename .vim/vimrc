@@ -1,16 +1,3 @@
-imap jj <Esc>
-"set runtimepath+=~/.vim_runtime
-
-source ~/.vim_runtime/vimrcs/basic.vim
-"source ~/.vim_runtime/vimrcs/filetypes.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
-"source ~/.vim_runtime/vimrcs/extended.vim
-
-"try
-"source ~/.vim_runtime/my_configs.vim
-"catch
-"endtry
-
 " ---------------My Setting----------------
 
 " ---------------
@@ -19,3 +6,9 @@ source ~/.vim_runtime/vimrcs/plugins_config.vim
 
 set viminfo+=n~/.cache/vim/viminfo
 let MRU_File = $HOME . '/.cache/vim/vim_mru_files'
+
+" ---------------
+" Source File Paths
+" ---------------
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
