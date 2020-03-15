@@ -8,11 +8,11 @@
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-let s:vim_runtime = expand('<sfile>:p:h')."/.."
-call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
-call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
-call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
-call pathogen#helptags()
+"let s:vim_runtime = expand('<sfile>:p:h')."/.."
+"call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
+"call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
+"call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
+"call pathogen#helptags()
 
 
 """"""""""""""""""""""""""""""
@@ -114,6 +114,7 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'active': {
