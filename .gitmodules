@@ -1,3 +1,39 @@
 [submodule ".vim/pack/plugins/start/vim-commentary"]
 	path = .vim/pack/plugins/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule ".vim/pack/plugins/start/bufexplorer.zip"]
+	path = .vim/pack/plugins/start/bufexplorer.zip
+	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule ".vim/pack/plugins/start/ctrlp.vim"]
+	path = .vim/pack/plugins/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule ".vim/pack/plugins/start/lightline"]
+	path = .vim/pack/plugins/start/lightline
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule ".vim/pack/plugins/start/nerdtree"]
+	path = .vim/pack/plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule ".vim/pack/plugins/start/mru"]
+	path = .vim/pack/plugins/start/mru
+	url = https://github.com/vim-scripts/mru.vim.git
+[submodule ".vim/pack/plugins/start/open_file_under_cursor"]
+	path = .vim/pack/plugins/start/open_file_under_cursor
+	url = https://github.com/amix/open_file_under_cursor.vim.git
+[submodule ".vim/pack/plugins/start/snipmate"]
+	path = .vim/pack/plugins/start/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule ".vim/pack/plugins/start/ale"]
+	path = .vim/pack/plugins/start/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule ".vim/pack/plugins/start/fugitive"]
+	path = .vim/pack/plugins/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/pack/plugins/start/vim_indent_object"]
+	path = .vim/pack/plugins/start/vim_indent_object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
+[submodule ".vim/pack/plugins/start/vim_multiple_cursors"]
+	path = .vim/pack/plugins/start/vim_multiple_cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule ".vim/pack/plugins/start/vim_yankstack"]
+	path = .vim/pack/plugins/start/vim_yankstack
+	url = https://github.com/maxbrunsfeld/vim-yankstack.git
