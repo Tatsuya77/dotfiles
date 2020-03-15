@@ -18,4 +18,4 @@ source ~/.vim_runtime/vimrcs/plugins_config.vim
 " ---------------
 
 set viminfo+=n~/.cache/vim/viminfo
-let MRU_File = $HOME . '~/.cache/vim/vim_mru_files'
+let MRU_File = $HOME . '/.cache/vim/vim_mru_files'
