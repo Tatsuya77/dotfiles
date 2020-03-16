@@ -10,5 +10,6 @@ let MRU_File = $HOME . '/.cache/vim/vim_mru_files'
 " ---------------
 " Source File Paths
 " ---------------
-source ~/.vim_runtime/vimrcs/basic.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim/vimrcs/basic.vim
+source ~/.vim/vimrcs/plugins_config.vim
+source ~/.vim/vimrcs/filetypes.vim
