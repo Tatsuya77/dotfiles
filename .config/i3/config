@@ -31,7 +31,7 @@ floating_modifier $mod
 
 # Launch the special apps
 bindsym $mod+Control+1 exec chromium-browser
-bindsym $mod+Control+2 exec chromium chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html
+bindsym $mod+Control+2 exec chromium-browser chrome-extension://ophjlpahpchlmihnnnihgmmeilfjmjjc/index.html
 bindsym $mod+Control+3 exec slack
 bindsym $mod+Control+4 exec nautilus 
 bindsym $mod+Control+5 exec chromium
