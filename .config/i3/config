@@ -167,6 +167,11 @@ bar {
         status_command i3status
 }
 
+# audio system
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute;
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute;
+bindsym XF86AudioMute exec amixer -q set Master toggle;
+
 # auto-enable mozc after booting
 exec --no-startup-id fcitx;
 
@@ -183,5 +188,20 @@ gaps outer 10
 bindsym $mod+z		gaps inner current plus 5
 bindsym $mod+Shift+z	gaps inner current minus 5
 
-# terminal tranceparency
-# exec --no-startup-id compton;
+set $bg-color 	         #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
+hide_edge_borders both
+
+# terminal transparency (.config/compton.config)
+exec --no-startup-id compton;
