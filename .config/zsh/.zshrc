@@ -67,9 +67,13 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # My aliases
 alias ll='ls -la'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias eth='lf OneDrive/Documents/eth_application/'
 
 
 # Lang Setting
 #export LANG=en_US
 #export LC_ALL=en_US
 #export LANGUAGE=en_US
+
+#exection
+neofetch

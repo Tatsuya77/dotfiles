@@ -29,34 +29,33 @@ urxvt.keysym.F11: perl:fullscreen:switch
 
 /* !! HiDPI configuration (144 for Surface) */
 !! for surface
-Xft.dpi: 144
+!Xft.dpi: 144
 
 
-!-------------------------------------------------------------------------------
-! Color Settings
+!------------------------------------------------------------------------------- ! Color Settings
 !-------------------------------------------------------------------------------
 
 !! Luke Smith
-!URxvt.color0: rgb:00/00/00
-!URxvt.color1: rgb:CC/00/00
-!URxvt.color2: rgb:4E/9A/06
-!URxvt.color3: #9b870c  !Normal yellow: Dark yellow
-!URxvt.color4: rgb:34/65/A4
-!URxvt.color5: rgb:75/50/7B
-!URxvt.color6: rgb:06/98/9A
-!URxvt.color7: rgb:D3/D7/CF
-!URxvt.color8: rgb:55/57/53
-!URxvt.color9: rgb:EF/29/29
-!URxvt.color10: rgb:8A/E2/34
-!URxvt.color11: #9b870c  !Light yellow: Dark yellow
-!URxvt.color12: rgb:72/9F/CF
-!URxvt.color13: rgb:AD/7F/A8
-!URxvt.color14: rgb:34/E2/E2
-!URxvt.color15: rgb:EE/EE/EC
-!URxvt.colorBD: rgb:ff/ff/ff
+!urxvt.color0: rgb:00/00/00
+!urxvt.color1: rgb:cc/00/00
+!urxvt.color2: rgb:4e/9a/06
+!urxvt.color3: #9b870c  !normal yellow: dark yellow
+!urxvt.color4: rgb:34/65/a4
+!urxvt.color5: rgb:75/50/7b
+!urxvt.color6: rgb:06/98/9a
+!urxvt.color7: rgb:d3/d7/cf
+!urxvt.color8: rgb:55/57/53
+!urxvt.color9: rgb:ef/29/29
+!urxvt.color10: rgb:8a/e2/34
+!urxvt.color11: #9b870c  !light yellow: dark yellow
+!urxvt.color12: rgb:72/9f/cf
+!urxvt.color13: rgb:ad/7f/a8
+!urxvt.color14: rgb:34/e2/e2
+!urxvt.color15: rgb:ee/ee/ec
+!urxvt.colorbd: rgb:ff/ff/ff
 
 
-!!Source http://github.com/altercation/solarized
+!!source http://github.com/altercation/solarized
 
 !! black dark/light
 *color0: #073642
@@ -89,3 +88,24 @@ Xft.dpi: 144
 !! white dark/light
 *color7: #eee8d5
 *color15: #fdf6e3
+
+!!source https://github.com/Mayccoll/Gogh/blob/master/themes/clrs.sh
+!urxvt.color0: #000000
+!urxvt.color1: #f8282a
+!urxvt.color2: #328a5d
+!urxvt.color3: #fa701d
+!urxvt.color4: #135cd0
+!urxvt.color5: #9f00bd
+!urxvt.color6: #33c3c1
+!urxvt.color7: #b3b3b3
+!urxvt.color8: #555753
+!urxvt.color9: #fb0416
+!urxvt.color10: #2cc631
+!urxvt.color11: #fdd727
+!urxvt.color12: #1670ff
+!urxvt.color13: #e900b0
+!urxvt.color14: #3ad5ce
+!urxvt.color15: #eeeeec
+!urxvt.colorbd: rgb:ff/ff/ff
+
+
