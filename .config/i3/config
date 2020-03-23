@@ -205,3 +205,7 @@ hide_edge_borders both
 
 # terminal transparency (.config/compton.config)
 exec --no-startup-id compton;
+
+# Monitor Setting
+# Moving workspaces between screens 
+bindsym $mod+p move workspace to output right

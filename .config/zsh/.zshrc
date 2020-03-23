@@ -68,6 +68,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias ll='ls -la'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias eth='lf OneDrive/Documents/eth_application/'
+alias one='lf OneDrive'
 
 
 # Lang Setting
