@@ -29,7 +29,7 @@ urxvt.keysym.F11: perl:fullscreen:switch
 
 /* !! HiDPI configuration (144 for Surface) */
 !! for surface
-!Xft.dpi: 144
+Xft.dpi: 144
 
 
 !------------------------------------------------------------------------------- ! Color Settings
