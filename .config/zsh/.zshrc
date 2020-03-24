@@ -69,6 +69,7 @@ alias ll='ls -la'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias eth='lf OneDrive/Documents/eth_application/'
 alias one='lf OneDrive'
+alias vrc='lf .vim/'
 
 
 # Lang Setting

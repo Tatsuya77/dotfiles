@@ -27,16 +27,12 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
-" Colorscheme
-set background=dark
-colorscheme peaksea
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>e :e! ~/.vim_runtime/my_configs.vim<cr>
-autocmd! bufwritepost ~/.vim_runtime/my_configs.vim source ~/.vim_runtime/my_configs.vim
+map <leader>e :e! ~/.vim/vimrc<cr>
+autocmd! bufwritepost ~/.vim/vimrc source ~/.vim/vimrc
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -44,7 +40,7 @@ autocmd! bufwritepost ~/.vim_runtime/my_configs.vim source ~/.vim_runtime/my_con
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 try
-    set undodir=~/.vim_runtime/temp_dirs/undodir
+    set undodir=~/.vim/temp_dirs/undodir
     set undofile
 catch
 endtry
@@ -87,11 +83,11 @@ vnoremap $$ <esc>`>a"<esc>`<i"<esc>
 vnoremap $q <esc>`>a'<esc>`<i'<esc>
 vnoremap $e <esc>`>a"<esc>`<i"<esc>
 
-" Map auto complete of (, ", ', [
+" map auto complete of (, ", ', [
 inoremap $1 ()<esc>i
 inoremap $2 []<esc>i
 inoremap $3 {}<esc>i
-inoremap $4 {<esc>o}<esc>O
+inoremap $4 {<esc>o}<esc>o
 inoremap $q ''<esc>i
 inoremap $e ""<esc>i
 
