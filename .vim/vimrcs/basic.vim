@@ -44,7 +44,7 @@ au FocusGained,BufEnter * checktime
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = ","
+"let mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -90,7 +90,7 @@ set hid
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
-" Ignore case when searching
+" Ignore cases when searching
 set ignorecase
 
 " When searching try to be smart about cases 
@@ -392,4 +392,4 @@ endfunction
 
 " copying and pasting mapping using 'plus register' of gvim https://www.youtube.com/watch?v=E_rbfQqrm7g
 vnoremap <C-c> "+y
-map <C-v> "+p
+"map <C-v> "+p
