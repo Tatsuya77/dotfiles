@@ -1,3 +1,7 @@
+# Source Files
+source "$HOME/.config/zsh/files_alias"
+source "$HOME/.config/zsh/my_aliases"
+
 # Luke's config for the Zoomer Shell
 
 autoload -U colors && colors
@@ -30,7 +34,10 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
-export KEYTIMEOUT=1
+export KEYTIMEOUT=20
+
+# 'jj' to enter normal mode
+bindkey -M viins 'jj' vi-cmd-mode 
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -63,14 +70,6 @@ bindkey -s '^o' 'lf\n'  # zsh
 # Load zsh-syntax-highlighting; should be last.
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# My aliases
-alias ll='ls -la'
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias eth='lf OneDrive/Documents/eth_application/'
-alias one='lf OneDrive'
-alias vrc='lf .vim/'
-
 
 # Lang Setting
 #export LANG=en_US
