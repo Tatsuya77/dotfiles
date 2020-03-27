@@ -31,9 +31,21 @@
 [submodule ".vim/pack/plugins/start/vim_yankstack"]
 	path = .vim/pack/plugins/start/vim_yankstack
 	url = https://github.com/maxbrunsfeld/vim-yankstack.git
-[submodule "/home/tatsu/.config/zsh/zsh-autosuggestions"]
-	path = /home/tatsu/.config/zsh/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "zsh-autosuggestions"]
-	path = zsh-autosuggestions
-	url = /home/tatsu/.config/zsh/zsh-autosuggestions
+[submodule ".vim/pack/plugins/start/snipmate"]
+	path = .vim/pack/plugins/start/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule ".vim/pack/plugins/start/tlib_vim"]
+	path = .vim/pack/plugins/start/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule ".vim/pack/plugins/start/vim-addon-mw-utils"]
+	path = .vim/pack/plugins/start/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule ".vim/pack/plugins/start/vim-snipmate"]
+	path = .vim/pack/plugins/start/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule ".vim/pack/plugins/start/vim-snippets"]
+	path = .vim/pack/plugins/start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule ".config/zsh/zsh-autosuggestions"]
+	path = .config/zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
