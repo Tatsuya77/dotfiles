@@ -46,9 +46,6 @@
 [submodule ".vim/pack/plugins/start/vim-snippets"]
 	path = .vim/pack/plugins/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-#[submodule ".config/zsh/zsh-autosuggestions"]
-#	path = .config/zsh/zsh-autosuggestions
-#	url = https://github.com/zsh-users/zsh-autosuggestions
-#[submodule "zsh-autosuggestions"]
-#	path = zsh-autosuggestions
-#	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".config/zsh/zsh-autosuggestions"]
+	path = .config/zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
