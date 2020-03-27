@@ -164,8 +164,11 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+    status_command i3status 
 }
+#bar {
+#    status_command i3blocks 
+#}
 
 # audio system
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute;
@@ -205,6 +208,9 @@ hide_edge_borders both
 
 # terminal transparency (.config/compton.config)
 exec --no-startup-id compton;
+
+# unclutter cursor
+exec --no-startup-id unclutter;
 
 # Monitor Setting
 # Moving workspaces between screens 

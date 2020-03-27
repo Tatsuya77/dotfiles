@@ -71,6 +71,9 @@ bindkey -s '^o' 'lf\n'  # zsh
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Load zsh-autosuggestions
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Lang Setting
 #export LANG=en_US
 #export LC_ALL=en_US
@@ -78,3 +81,4 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #exection
 neofetch
+

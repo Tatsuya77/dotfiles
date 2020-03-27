@@ -31,3 +31,6 @@
 [submodule ".vim/pack/plugins/start/vim_yankstack"]
 	path = .vim/pack/plugins/start/vim_yankstack
 	url = https://github.com/maxbrunsfeld/vim-yankstack.git
+[submodule "/home/tatsu/.config/zsh/zsh-autosuggestions"]
+	path = /home/tatsu/.config/zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
