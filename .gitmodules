@@ -34,3 +34,6 @@
 [submodule "/home/tatsu/.config/zsh/zsh-autosuggestions"]
 	path = /home/tatsu/.config/zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh-autosuggestions"]
+	path = zsh-autosuggestions
+	url = /home/tatsu/.config/zsh/zsh-autosuggestions
