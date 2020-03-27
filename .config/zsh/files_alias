@@ -1,0 +1,7 @@
+alias eth='lf ~/OneDrive/Documents/eth_application/'
+alias one='lf ~/OneDrive'
+alias vrc='lf ~/.vim/'
+alias doc='lf ~/OneDrive/Documents/'
+alias cfg='lf ~/.config/'
+alias cfz='lf ~/.config/zsh'
+alias cfi='lf ~/.config/i3'
