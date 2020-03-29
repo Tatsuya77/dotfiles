@@ -56,7 +56,7 @@ zle -N zle-keymap-select
 
 zle-line-init() {
     zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
-    echo -ne "\e[5 q"
+    echo -ne '\e[5 q'
 }
 zle -N zle-line-init
 
@@ -65,14 +65,14 @@ echo -ne '\e[5 q'
 # Use beam shape cursor for each new prompt.
 preexec() { echo -ne '\e[5 q' ;}
 
-bindkey -s '^o' 'lf\n'  # zsh
 
-# Load zsh-syntax-highlighting; should be last.
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# evoke File Manager
+bindkey -s '^o' 'lf\n'  # zsh
 
 # Load zsh-autosuggestions
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=60"
+bindkey '^l' autosuggest-accept
 
 # Lang Setting
 #export LANG=en_US
@@ -82,3 +82,6 @@ source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #exection
 neofetch
 
+# Load zsh-syntax-highlighting; should be last.
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

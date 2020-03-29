@@ -44,7 +44,8 @@ au FocusGained,BufEnter * checktime
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-"let mapleader = ","
+let mapleader = ","
+noremap \ ,
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -52,6 +53,10 @@ nmap <leader>w :w!<cr>
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
+"Fold by indent
+set foldmethod=indent
+set foldlevel=99
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -135,8 +140,13 @@ imap jj <Esc>
 " Cursorline
 set cul
 
+" Change cursor shape
+autocmd InsertEnter * silent exec "! echo -ne '\e[5 q'" 
+autocmd InsertLeave * silent exec "! echo -ne '\e[1 q'" 
+silent exec "! echo -ne '\e[1 q'"
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
@@ -199,6 +209,9 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" Disable auto comment format
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -212,6 +225,9 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" set 'very magic'
+nnoremap / /\v
+
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 map <C-space> ?
