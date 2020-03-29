@@ -212,6 +212,9 @@ exec --no-startup-id compton;
 # unclutter cursor
 exec --no-startup-id unclutter;
 
+# enable pCloudDrive
+exec --no-startup-id ProgramFiles/pcloud;
+
 # Monitor Setting
 # Moving workspaces between screens 
 bindsym $mod+p move workspace to output right

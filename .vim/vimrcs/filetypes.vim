@@ -79,7 +79,10 @@ autocmd BufRead *.twig set syntax=html filetype=html
 """"""""""""""""""""""""""""""
 let vim_markdown_folding_disabled = 1
 
+
 """"""""""""""""""""""""""""""
 " => Rmarkdown
 """"""""""""""""""""""""""""""
 autocmd Filetype rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+
+
