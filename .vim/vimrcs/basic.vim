@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
-"       Amir Salihefendic — @amix3k
+"       Tatsu77 https://github.com/Tatsuya77
 "
 " Awesome_version:
 "       Get this config, nice color schemes and lots of plugins!
