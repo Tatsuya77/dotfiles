@@ -31,18 +31,12 @@
 [submodule ".vim/pack/plugins/start/vim_yankstack"]
 	path = .vim/pack/plugins/start/vim_yankstack
 	url = https://github.com/maxbrunsfeld/vim-yankstack.git
-[submodule ".vim/pack/plugins/start/snipmate"]
-	path = .vim/pack/plugins/start/snipmate
-	url = https://github.com/garbas/vim-snipmate.git
 [submodule ".vim/pack/plugins/start/tlib_vim"]
 	path = .vim/pack/plugins/start/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
 [submodule ".vim/pack/plugins/start/vim-addon-mw-utils"]
 	path = .vim/pack/plugins/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule ".vim/pack/plugins/start/vim-snipmate"]
-	path = .vim/pack/plugins/start/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
 [submodule ".vim/pack/plugins/start/vim-snippets"]
 	path = .vim/pack/plugins/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
@@ -61,12 +55,30 @@
 [submodule ".vim/pack/plugins/start/fzf.vim"]
 	path = .vim/pack/plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
-[submodule ".vim/pack/plugins/start/fzf"]
-	path = .vim/pack/plugins/start/fzf
-	url = https://github.com/junegunn/fzf.git
 [submodule ".vim/pack/plugins/start/vim-visual-star-search"]
 	path = .vim/pack/plugins/start/vim-visual-star-search
 	url = https://github.com/nelstrom/vim-visual-star-search.git
-[submodule ".vim/pack/plugins/start/vim-live-latex-preview"]
-	path = .vim/pack/plugins/start/vim-live-latex-preview
-	url = https://github.com/ying17zi/vim-live-latex-preview.git
+[submodule ".config/wallpapers"]
+	path = .config/wallpapers
+	url = https://gitlab.com/dwt1/wallpapers.git
+[submodule ".vim/pack/plugins/start/vim-latex-live-preview"]
+	path = .vim/pack/plugins/start/vim-latex-live-preview
+	url = https://github.com/xuhdev/vim-latex-live-preview.git
+[submodule ".vim/pack/plugins/start/vimtex"]
+	path = .vim/pack/plugins/start/vimtex
+	url = https://github.com/lervag/vimtex.git
+[submodule ".vim/pack/plugins/start/vim-template"]
+	path = .vim/pack/plugins/start/vim-template
+	url = https://github.com/aperezdc/vim-template.git
+[submodule ".vim/pack/plugins/start/fzf"]
+	path = .vim/pack/plugins/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule ".vim/pack/plugins/start/ultisnips"]
+	path = .vim/pack/plugins/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule ".config/st"]
+	path = .config/st
+	url = https://github.com/LukeSmithxyz/st
+[submodule "ProgramFiles/fzf"]
+	path = ProgramFiles/fzf
+	url = https://github.com/junegunn/fzf.git

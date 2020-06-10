@@ -1,0 +1,133 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+#	basic.vim	/^vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@\/<CR><CR>$/;"	m
+$LANG	basic.vim	/^let $LANG='en' $/;"	v
+$c	extended.vim	/^cno $c e <C-\\>eCurrentFileDir("e")<cr>$/;"	m
+$d	extended.vim	/^cno $d e ~\/Desktop\/$/;"	m
+$h	extended.vim	/^cno $h e ~\/$/;"	m
+$j	extended.vim	/^cno $j e .\/$/;"	m
+$q	extended.vim	/^cno $q <C-\\>eDeleteTillSlash()<cr>$/;"	m
+*	basic.vim	/^vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>\/<C-R>=@\/<CR><CR>$/;"	m
+/	basic.vim	/^nnoremap \/ \/\\v$/;"	m
+0	basic.vim	/^map 0 ^$/;"	m
+<C-A>		<Home>	extended.vim	/^cnoremap <C-A>		<Home>$/;"	m
+<C-E>		<End>	extended.vim	/^cnoremap <C-E>		<End>$/;"	m
+<C-K>		<C-U>	extended.vim	/^cnoremap <C-K>		<C-U>$/;"	m
+<C-N>	extended.vim	/^cnoremap <C-N> <Down>$/;"	m
+<C-P>	extended.vim	/^cnoremap <C-P> <Up>$/;"	m
+<C-c>	basic.vim	/^vnoremap <C-c> "+y$/;"	m
+<C-f>	plugins_config.vim	/^map <C-f> :Files<cr>$/;"	m
+<C-h>	basic.vim	/^map <C-h> <C-W>h$/;"	m
+<C-j>	basic.vim	/^map <C-j> <C-W>j$/;"	m
+<C-j>	plugins_config.vim	/^ino <C-j> <C-r>=snipMate#TriggerSnippet()<cr>$/;"	m
+<C-k>	basic.vim	/^map <C-k> <C-W>k$/;"	m
+<C-l>	basic.vim	/^map <C-l> <C-W>l$/;"	m
+<C-n>	plugins_config.vim	/^nmap <C-n> <Plug>yankstack_substitute_newer_paste$/;"	m
+<C-p>	plugins_config.vim	/^nmap <C-p> <Plug>yankstack_substitute_older_paste$/;"	m
+<C-space>	basic.vim	/^map <C-space> ?$/;"	m
+<D-j>	basic.vim	/^  nmap <D-j> <M-j>$/;"	m
+<D-j>	basic.vim	/^  vmap <D-j> <M-j>$/;"	m
+<D-k>	basic.vim	/^  nmap <D-k> <M-k>$/;"	m
+<D-k>	basic.vim	/^  vmap <D-k> <M-k>$/;"	m
+<Leader>m	basic.vim	/^noremap <Leader>m mmHmt:%s\/<C-V><cr>\/\/ge<cr>'tzt'm$/;"	m
+<Leader>tl	basic.vim	/^nmap <Leader>tl :exe "tabn ".g:lasttab<CR>$/;"	m
+<M-j>	basic.vim	/^nmap <M-j> mz:m+<cr>`z$/;"	m
+<M-j>	basic.vim	/^vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z$/;"	m
+<M-k>	basic.vim	/^nmap <M-k> mz:m-2<cr>`z$/;"	m
+<M-k>	basic.vim	/^vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z$/;"	m
+<leader><cr>	basic.vim	/^map <silent> <leader><cr> :noh<cr>$/;"	m
+<leader>a	plugins_config.vim	/^nmap <silent> <leader>a <Plug>(ale_next_wrap)$/;"	m
+<leader>ba	basic.vim	/^map <leader>ba :bufdo bd<cr>$/;"	m
+<leader>bd	basic.vim	/^map <leader>bd :Bclose<cr>:tabclose<cr>gT$/;"	m
+<leader>cc	extended.vim	/^map <leader>cc :botright cope<cr>$/;"	m
+<leader>cd	basic.vim	/^map <leader>cd :cd %:p:h<cr>:pwd<cr>$/;"	m
+<leader>co	extended.vim	/^map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg$/;"	m
+<leader>d	plugins_config.vim	/^nnoremap <silent> <leader>d :GitGutterToggle<cr>$/;"	m
+<leader>e	extended.vim	/^map <leader>e :e! ~\/.vim\/vimrc<cr>$/;"	m
+<leader>f	plugins_config.vim	/^map <leader>f :MRU<CR>$/;"	m
+<leader>g	extended.vim	/^map <leader>g :Ack $/;"	m
+<leader>h	basic.vim	/^map <leader>h :bprevious<cr>$/;"	m
+<leader>l	basic.vim	/^map <leader>l :bnext<cr>$/;"	m
+<leader>n	extended.vim	/^map <leader>n :cn<cr>$/;"	m
+<leader>nb	plugins_config.vim	/^map <leader>nb :NERDTreeFromBookmark<Space>$/;"	m
+<leader>nf	plugins_config.vim	/^map <leader>nf :NERDTreeFind<cr>$/;"	m
+<leader>nn	plugins_config.vim	/^map <leader>nn :NERDTreeToggle<cr>$/;"	m
+<leader>o	plugins_config.vim	/^map <leader>o :BufExplorer<cr>$/;"	m
+<leader>p	extended.vim	/^map <leader>p :cp<cr>$/;"	m
+<leader>pp	basic.vim	/^map <leader>pp :setlocal paste!<cr>$/;"	m
+<leader>q	basic.vim	/^map <leader>q :qa<cr>$/;"	m
+<leader>r	extended.vim	/^vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>$/;"	m
+<leader>s?	basic.vim	/^map <leader>s? z=$/;"	m
+<leader>sa	basic.vim	/^map <leader>sa zg$/;"	m
+<leader>sn	basic.vim	/^map <leader>sn ]s$/;"	m
+<leader>sp	basic.vim	/^map <leader>sp [s$/;"	m
+<leader>ss	basic.vim	/^map <leader>ss :setlocal spell!<cr>$/;"	m
+<leader>t<leader>	basic.vim	/^map <leader>t<leader> :tabnext $/;"	m
+<leader>tc	basic.vim	/^map <leader>tc :tabclose<cr>$/;"	m
+<leader>te	basic.vim	/^map <leader>te :tabedit <C-r>=expand("%:p:h")<cr>\/$/;"	m
+<leader>tm	basic.vim	/^map <leader>tm :tabmove $/;"	m
+<leader>tn	basic.vim	/^map <leader>tn :tabnew<cr>$/;"	m
+<leader>to	basic.vim	/^map <leader>to :tabonly<cr>$/;"	m
+<leader>w	basic.vim	/^nmap <leader>w :w!<cr>$/;"	m
+<leader>x	basic.vim	/^map <leader>x :e ~\/buffer.md<cr>$/;"	m
+<leader>z	plugins_config.vim	/^nnoremap <silent> <leader>z :Goyo<cr>$/;"	m
+<space>	basic.vim	/^map <space> \/$/;"	m
+Bclose	basic.vim	/^command! Bclose call <SID>BufcloseCloseIt()$/;"	c
+BufcloseCloseIt	basic.vim	/^function! <SID>BufcloseCloseIt()$/;"	f
+CleanExtraSpaces	basic.vim	/^fun! CleanExtraSpaces()$/;"	f
+CmdLine	basic.vim	/^function! CmdLine(str)$/;"	f
+CoffeeScriptFold	filetypes.vim	/^function! CoffeeScriptFold()$/;"	f
+CurrentFileDir	extended.vim	/^func! CurrentFileDir(cmd)$/;"	f
+DeleteTillSlash	extended.vim	/^func! DeleteTillSlash()$/;"	f
+Grep_Skip_Dirs	plugins_config.vim	/^let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'$/;"	v
+HasPaste	basic.vim	/^function! HasPaste()$/;"	f
+JavaScriptFold	filetypes.vim	/^function! JavaScriptFold() $/;"	f
+MRU_Max_Entries	plugins_config.vim	/^let MRU_Max_Entries = 400$/;"	v
+NERDTreeIgnore	plugins_config.vim	/^let NERDTreeIgnore = ['\\.pyc$', '__pycache__']$/;"	v
+NERDTreeShowHidden	plugins_config.vim	/^let NERDTreeShowHidden=0$/;"	v
+Si	plugins_config.vim	/^vmap Si S(i_<esc>f)$/;"	m
+VisualSelection	basic.vim	/^function! VisualSelection(direction, extra_filter) range$/;"	f
+W	basic.vim	/^command! W execute 'w !sudo tee % > \/dev\/null' <bar> edit!$/;"	c
+\	basic.vim	/^noremap \\ ,$/;"	m
+g:NERDTreeWinPos	plugins_config.vim	/^let g:NERDTreeWinPos = "right"$/;"	v
+g:NERDTreeWinSize	plugins_config.vim	/^let g:NERDTreeWinSize=35$/;"	v
+g:ackprg	extended.vim	/^  let g:ackprg = 'ag --vimgrep --smart-case'$/;"	v
+g:ale_echo_cursor	plugins_config.vim	/^let g:ale_echo_cursor = 1$/;"	v
+g:ale_lint_on_enter	plugins_config.vim	/^let g:ale_lint_on_enter = 0$/;"	v
+g:ale_lint_on_text_changed	plugins_config.vim	/^let g:ale_lint_on_text_changed = 'never'$/;"	v
+g:ale_linters	plugins_config.vim	/^let g:ale_linters = {$/;"	v
+g:ale_set_highlights	plugins_config.vim	/^let g:ale_set_highlights = 1$/;"	v
+g:bufExplorerDefaultHelp	plugins_config.vim	/^let g:bufExplorerDefaultHelp=1$/;"	v
+g:bufExplorerFindActive	plugins_config.vim	/^let g:bufExplorerFindActive=1$/;"	v
+g:bufExplorerShowRelativePath	plugins_config.vim	/^let g:bufExplorerShowRelativePath=1$/;"	v
+g:bufExplorerSortBy	plugins_config.vim	/^let g:bufExplorerSortBy='name'$/;"	v
+g:gitgutter_enabled	plugins_config.vim	/^let g:gitgutter_enabled=0$/;"	v
+g:goyo_margin_bottom	plugins_config.vim	/^let g:goyo_margin_bottom = 2$/;"	v
+g:goyo_margin_top	plugins_config.vim	/^let g:goyo_margin_top = 2$/;"	v
+g:goyo_width	plugins_config.vim	/^let g:goyo_width=100$/;"	v
+g:lasttab	basic.vim	/^let g:lasttab = 1$/;"	v
+g:lightline	plugins_config.vim	/^let g:lightline = {$/;"	v
+g:multi_cursor_next_key	plugins_config.vim	/^let g:multi_cursor_next_key            = '<C-s>'$/;"	v
+g:multi_cursor_prev_key	plugins_config.vim	/^let g:multi_cursor_prev_key            = '<C-p>'$/;"	v
+g:multi_cursor_quit_key	plugins_config.vim	/^let g:multi_cursor_quit_key            = '<Esc>'$/;"	v
+g:multi_cursor_select_all_key	plugins_config.vim	/^let g:multi_cursor_select_all_key      = 'g<A-s>'$/;"	v
+g:multi_cursor_select_all_word_key	plugins_config.vim	/^let g:multi_cursor_select_all_word_key = '<A-s>'$/;"	v
+g:multi_cursor_skip_key	plugins_config.vim	/^let g:multi_cursor_skip_key            = '<C-x>'$/;"	v
+g:multi_cursor_start_key	plugins_config.vim	/^let g:multi_cursor_start_key           = 'g<C-s>'$/;"	v
+g:multi_cursor_start_word_key	plugins_config.vim	/^let g:multi_cursor_start_word_key      = '<C-s>'$/;"	v
+g:multi_cursor_use_default_mapping	plugins_config.vim	/^let g:multi_cursor_use_default_mapping=0$/;"	v
+g:user_zen_mode	plugins_config.vim	/^let g:user_zen_mode='a'$/;"	v
+g:vimtex_compiler_latexmk	plugins_config.vim	/^let g:vimtex_compiler_latexmk = {$/;"	v
+g:yankstack_yank_keys	plugins_config.vim	/^let g:yankstack_yank_keys = ['y', 'd']$/;"	v
+gv	extended.vim	/^vnoremap <silent> gv :call VisualSelection('gv', '')<CR>$/;"	m
+jj	basic.vim	/^imap jj <Esc>$/;"	m
+mapleader	basic.vim	/^let mapleader = ","$/;"	v
+python_highlight_all	filetypes.vim	/^let python_highlight_all = 1$/;"	v
+vim_markdown_folding_disabled	filetypes.vim	/^let vim_markdown_folding_disabled = 1$/;"	v
+½	extended.vim	/^cmap ½ \$$/;"	m
+½	extended.vim	/^imap ½ \$$/;"	m
+½	extended.vim	/^map ½ \$$/;"	m

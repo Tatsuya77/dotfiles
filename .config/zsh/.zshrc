@@ -69,6 +69,10 @@ preexec() { echo -ne '\e[5 q' ;}
 # evoke File Manager
 bindkey -s '^o' 'lf\n'  # zsh
 
+# fzf config
+[ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
+export FZF_DEFAULT_OPTS="--height 40% --reverse --border --preview 'cat {}'"
+
 # Load zsh-autosuggestions
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=60"
@@ -81,6 +85,9 @@ bindkey '^l' autosuggest-accept
 
 #exection
 neofetch
+
+# TMUX Term Color for zsh-syntax-highlighting (https://github.com/zsh-users/zsh-autosuggestions/issues/229)
+if [ ! "$TMUX" = "" ]; then export TERM=xterm-256color; fi
 
 # Load zsh-syntax-highlighting; should be last.
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

@@ -1,3 +1,7 @@
 alias ll='ls -la'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias v='vim'
+alias f='fzf'
+# avoid overwriting
+alias cp='cp -i'
+alias mv='mv -i'

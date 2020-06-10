@@ -86,3 +86,42 @@ let vim_markdown_folding_disabled = 1
 autocmd Filetype rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
 
+""""""""""""""""""""""""""""""
+" => LaTeX
+""""""""""""""""""""""""""""""
+"autocmd Filetype tex map <F5> :!latexmk %<cr>
+"autocmd Filetype tex map <F6> :LLPStartPreview<cr>
+"let g:livepreview_engine = 'platex'
+autocmd Filetype tex :VimtexCompile
+autocmd Filetype tex map <F5> :w<space>\|VimtexCompile<cr>
+
+" append '$' to surround
+if !exists('g:AutoPairs')
+  autocmd FileType tex let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '```':'```', '"""':'"""', "'''":"'''", "`":"`", "$":"$"}
+end
+
+" add snippets to UltiSnips from vim-snippets/tes.snippets
+autocmd Filetype tex :UltiSnipsAddFiletypes tex
+
+
+""""""""""""""""""""""""""""""
+" => OCaml
+""""""""""""""""""""""""""""""
+autocmd Filetype ocaml map <F5> :w<space>\|!ocaml<space><<space><c-r>%<cr>
+" exclude "'"
+autocmd FileType ocaml let b:AutoPairs = {'(':')', '[':']', '{':'}','"':'"', '```':'```', '"""':'"""', "'''":"'''", "`":"`"}
+" comment out
+autocmd FileType ocaml setlocal commentstring=(*\ %s\ *)
+
+
+""""""""""""""""""""""""""""""
+" => make
+""""""""""""""""""""""""""""""
+" exclude "$"
+autocmd FileType make let b:AutoPairs = {'(':')', '[':']', '{':'}','"':'"', '```':'```', '"""':'"""', "'''":"'''", "`":"`"}
+
+""""""""""""""""""""""""""""""
+" => C
+""""""""""""""""""""""""""""""
+autocmd FileType c setlocal commentstring=//%s
+autocmd BufWritePost c call system("ctags -R")
