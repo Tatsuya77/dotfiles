@@ -179,7 +179,7 @@ bindsym XF86AudioMute exec amixer -q set Master toggle;
 exec --no-startup-id fcitx;
 
 # setting of the wallpaper
-exec --no-startup-id feh --randomize --bg-scale ~/Pictures/wallpapers/*;
+exec --no-startup-id feh --randomize --bg-scale ~/.config/wallpapers/*;
 
 # Setting of window gaps
 # Needed for i3-gaps
@@ -214,6 +214,9 @@ exec --no-startup-id unclutter;
 
 # enable pCloudDrive
 exec --no-startup-id ProgramFiles/pcloud;
+
+# setting of screen layouts
+exec --no-startup-id .screenlayout/default.sh
 
 # Monitor Setting
 # Moving workspaces between screens 

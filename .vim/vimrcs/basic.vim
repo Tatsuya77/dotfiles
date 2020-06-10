@@ -49,6 +49,7 @@ noremap \ ,
 
 " Fast saving
 nmap <leader>w :w!<cr>
+map <leader>q :qa<cr>
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
@@ -145,6 +146,8 @@ autocmd InsertEnter * silent exec "! echo -ne '\e[5 q'"
 autocmd InsertLeave * silent exec "! echo -ne '\e[1 q'" 
 silent exec "! echo -ne '\e[1 q'"
 
+" test
+hi Conceal term=standout ctermfg=black ctermbg=NONE guifg=Cyan
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -344,7 +347,7 @@ map <leader>s? z=
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Quickly open a buffer for scribble
-map <leader>q :e ~/buffer<cr>
+"map <leader>q :e ~/buffer<cr>
 
 " Quickly open a markdown buffer for scribble
 map <leader>x :e ~/buffer.md<cr>

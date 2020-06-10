@@ -40,16 +40,22 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 
 
 """"""""""""""""""""""""""""""
+" => fzf
+""""""""""""""""""""""""""""""
+map <C-f> :Files<cr>
+
+
+""""""""""""""""""""""""""""""
 " => CTRL-P
 """"""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = 0
-
-let g:ctrlp_map = '<C-f>'
-map <leader>j :CtrlP<cr>
-map <C-b> :CtrlPBuffer<cr>
-
-let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+"let g:ctrlp_working_path_mode = 0
+"
+"let g:ctrlp_map = '<C-f>'
+"map <leader>j :CtrlP<cr>
+"map <C-b> :CtrlPBuffer<cr>
+"
+"let g:ctrlp_max_height = 20
+"let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 
 
 """"""""""""""""""""""""""""""
@@ -147,6 +153,7 @@ nnoremap <silent> <leader>z :Goyo<cr>
 " => Ale (syntax checker and linter)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {
+\   'C': ['gcc'],
 \   'javascript': ['jshint'],
 \   'python': ['flake8'],
 \   'go': ['go', 'golint', 'errcheck']
@@ -154,12 +161,15 @@ let g:ale_linters = {
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
-" Disabling highlighting
-let g:ale_set_highlights = 0
+" Enabling highlighting
+let g:ale_set_highlights = 1
 
 " Only run linting when saving the file
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
+
+" Avoid cursor disappearing
+let g:ale_echo_cursor = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -167,3 +177,19 @@ let g:ale_lint_on_enter = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vimtex
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vimtex_compiler_latexmk = {
+            \ 'build_dir' : 'latex_build',
+            \}
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => UltiSnips
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsEditSplit="vertical"
