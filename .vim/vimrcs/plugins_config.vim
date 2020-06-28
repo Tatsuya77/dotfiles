@@ -171,6 +171,10 @@ let g:ale_lint_on_enter = 0
 " Avoid cursor disappearing
 let g:ale_echo_cursor = 1
 
+" Compiler Configuration
+let g:ale_c_gcc_executable = 'gcc-7'
+let g:ale_c_gcc_options = '-Wall -Wextra -nostdinc -nostdlib -fno-builtin -fno-common'
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
