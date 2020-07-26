@@ -175,7 +175,6 @@ let g:ale_echo_cursor = 1
 let g:ale_c_gcc_executable = 'gcc-7'
 let g:ale_c_gcc_options = '-Wall -Wextra -nostdinc -nostdlib -fno-builtin -fno-common'
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

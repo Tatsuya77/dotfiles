@@ -33,3 +33,5 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
 export ZDOTDIR="$HOME/.config/zsh"
+
+export PATH="$HOME/.cargo/bin:$PATH"
